@@ -59,6 +59,7 @@ main{
     margin: 0 auto;
     margin-top: 20px;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 h1{
@@ -68,11 +69,10 @@ h1{
 }
 
 .immagine{
-    max-width: 46%;
-    height: auto;
+    width: 46%;
     margin-right: 7px;
     margin-bottom: 60px;
-    justify-content: space-between;
+    
 }
 
 .immagine img{
@@ -134,4 +134,30 @@ footer{
 
 .debug footer{
     background-color: crimson;
+}
+
+
+
+
+/* Media Query */
+
+@media screen and (min-width: 568px) {
+    .sidebar{
+        width: 30%;
+        height: 100vh;
+        float: left;
+    }
+
+    nav{
+        width: 70%;
+        height: 140px;
+        float: right
+    }
+
+    main{
+        width: 70%;
+        height: calc(100% - 210px);
+        display: flex;
+        /* overflow-y: auto; */
+    }
 }
