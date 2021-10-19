@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 .row::after{
     content: '';
     display: table;
@@ -24,15 +25,45 @@
 /* Nav bar */
 
 .nav-sup{
-    width: 100%;
+    width: 90%;
     height: 60px;
+    float: right;
 }
 
 .nav-inf{
-    width: 100%;
+    width: 90%;
     height: 60px;
+    float: right;
 }
 
+
+/* main */
+
+main{
+    width: 90%;
+    display: flex;
+}
+
+.replayed{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+}
+
+
+
+
+
+/* footer */
+
+footer{
+    /* position: fixed; */
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    
+}
 
 
 /* **** debug **** */
@@ -50,7 +81,15 @@
 }
 
 .debug main{
-    height: 1000px;
+    height: 300px;
     background-color: blue;
 }
 
+.debug .replayed{
+    height: 100px;
+    background-color: rgb(228, 228, 228);
+}
+
+.debug footer{
+    background-color: crimson;
+}
