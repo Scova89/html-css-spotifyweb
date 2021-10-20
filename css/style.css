@@ -40,13 +40,26 @@ main{
     background-color: black;
 }
 
-.sidebar img{
+.sidebar-sup #logopiccolo{
     width: 60%;
     max-width: 20px;
     margin-bottom: 7px;
 }
 
+.sidebar-sup #icone{
+    width: 60%;
+    max-width: 20px;
+}
+
+#icone li{
+    margin-top: 7px;
+}
+
 .sidebar span{
+    display: none;
+}
+
+.sidebar #logogrande{
     display: none;
 }
 
@@ -65,12 +78,12 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    padding-bottom: 5px;
 }
 
-.sidebar-inf img:first-child{
+.sidebar-inf #icone{
     width: 45%;
-    margin-bottom: 15px;
+    max-width: 20px;
+    margin-bottom: 5px;
 }
 
 
@@ -88,7 +101,7 @@ main{
 
 .playlist{
     width: calc(100% - 30px);
-    height: calc(100% - 60px);
+    height: calc(100% - 50px);
     float: left;
     overflow-y: auto;
     margin-top: 50px;
@@ -172,7 +185,6 @@ footer{
     padding: 10px;
     background-color: white;
     height: 200px;
-
 }
 
 .debug .img-box{
@@ -181,9 +193,6 @@ footer{
 
 }
 
-.debug .dida{
-
-}
 
 /* .debug footer{
     background-color: rgb(71, 71, 71);
@@ -195,23 +204,48 @@ footer{
 
 /* s device */
 @media screen and (min-width: 568px) {
+
     .sidebar{
         width: 200px;
         height: 100%;
         float: left;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .sidebar-sup{
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: flex-start;
-        width: 80%;
-        padding-left: 10px;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: flex-start;
+        
     }
 
-    .sidebar span{
-        display: inline;
+    .sidebar-sup #logopiccolo{
+        display: none;
     }
+
+    .sidebar-sup #logogrande{
+        display: block;
+    }
+
+    #logogrande{
+        width: 80%;
+    }
+
+    
+        
+    }
+    #icone li a span{
+        display: inline-block;
+        
+        
+        
+    }
+    
+
+    
 
     .navbar-sup{
         height: 50px;
@@ -221,7 +255,7 @@ footer{
 
     .playlist{
         width: calc(100% - 200px);
-        height: calc(100% - 60px);
+        height: calc(100% - 50px);
         float: left;
         overflow-y: auto;
     }
@@ -251,7 +285,7 @@ footer{
 
     .playlist{
         width: calc(100% - 200px);
-        height: calc(100% - 60px);
+        height: calc(100% - 50px);
         float: left;
         overflow-y: auto;
     }
@@ -281,7 +315,7 @@ footer{
 
     .playlist{
         width: calc(100% - 200px);
-        height: calc(100% - 60px);
+        height: calc(100% - 50px);
         float: left;
         overflow-y: auto;
     }
