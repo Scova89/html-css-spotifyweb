@@ -26,28 +26,60 @@ main{
     height: calc(100% - 60px);
 }
 
+
+
+
+/* sidebar */
+
 .sidebar{
-    width: 40px;
+    width: 30px;
     height: 100%;
+    padding-top: 5px;
     float: left;
     min-height: 250px;
+    background-color: black;
+}
+
+.sidebar img{
+    width: 60%;
+    max-width: 20px;
+    margin-bottom: 7px;
+}
+
+.sidebar span{
+    display: none;
 }
 
 .sidebar-sup{
     width: 100%;
     height: 80%;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sidebar-inf{
     width: 100%;
     height: 20%;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 5px;
 }
+
+.sidebar-inf img:first-child{
+    width: 45%;
+    margin-bottom: 15px;
+}
+
+
+
+/* nav bar superiore */
 
 .navbar-sup{
     height: 50px;
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
     float: right;
     right: 0;
     position: fixed;
@@ -55,7 +87,7 @@ main{
 }
 
 .playlist{
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
     height: calc(100% - 60px);
     float: left;
     overflow-y: auto;
@@ -109,27 +141,27 @@ footer{
     background-color: grey;
 } */
 
-.debug .sidebar{
+/* .debug .sidebar{
     background-color: crimson;
-}
+} */
 
-.debug .sidebar-sup{
+/* .debug .sidebar-sup{
     background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
-.debug .sidebar-inf{
+/* .debug .sidebar-inf{
     background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
 .debug .navbar-sup{
     background-color: rgb(51, 164, 240);
-    
+
 }
 
 /* .debug .playlist{
     background-color: chocolate;
     height: 100vh;
-    
+
 } */
 
 .debug .navbar-inf{
@@ -140,13 +172,13 @@ footer{
     padding: 10px;
     background-color: white;
     height: 200px;
-    
+
 }
 
 .debug .img-box{
     background-color: red;
     height: 120px;
-    
+
 }
 
 .debug .dida{
@@ -169,24 +201,36 @@ footer{
         float: left;
     }
 
+    .sidebar-sup{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 80%;
+        padding-left: 10px;
+    }
+
+    .sidebar span{
+        display: inline;
+    }
+
     .navbar-sup{
         height: 50px;
         width: calc(100% - 200px);
         float: left;
     }
-    
+
     .playlist{
         width: calc(100% - 200px);
         height: calc(100% - 60px);
         float: left;
         overflow-y: auto;
     }
-    
+
     .img-box{
         max-width: 48%;
         margin-right: 10px;
         margin-bottom: 20px;
-        
+
     }
 }
 
@@ -204,14 +248,14 @@ footer{
         width: calc(100% - 200px);
         float: left;
     }
-    
+
     .playlist{
         width: calc(100% - 200px);
         height: calc(100% - 60px);
         float: left;
         overflow-y: auto;
     }
-    
+
     .img-box{
         max-width: 23%;
         margin-right: 10px;
@@ -234,14 +278,14 @@ footer{
         width: calc(100% - 200px);
         float: left;
     }
-    
+
     .playlist{
         width: calc(100% - 200px);
         height: calc(100% - 60px);
         float: left;
         overflow-y: auto;
     }
-    
+
     .img-box{
         max-width: 15%;
         margin-right: 10px;
