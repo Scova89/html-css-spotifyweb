@@ -212,16 +212,26 @@ hr{
     font-size: 10pt;
 }
 
+.titolo p{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 8pt;
+    margin-top: 5px;
+}
+
 .img-box{
     width: 120px;
     height: 120px;
     margin-right: 10px;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 }
 
 .img-box img{
     width: 100%;
     object-fit: cover;
+}
+
+.dida{
+    text-align: center;
 }
 
 .img-box .dida span{
@@ -230,6 +240,16 @@ hr{
     text-align: center;
 }
 
+.img-box .dida p{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 8pt;
+    margin-top: 5px;
+}
+
+
+.tondo{
+    border-radius: 50%;
+}
 
 
 
