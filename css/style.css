@@ -668,3 +668,7 @@ footer{
 
 
 
+/* hover navbar superiore */
+#upgrade a:hover{
+    font-size: 11pt;
+}
