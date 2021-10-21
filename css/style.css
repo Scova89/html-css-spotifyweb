@@ -267,9 +267,10 @@ footer{
     align-items: center;
 }
 
+
+/* footer parte sinistra */
 .footer-snt{
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     margin-left: 10px;
 }
@@ -307,6 +308,17 @@ footer{
 }
 
 
+/* footer parte centrale */
+.footer-clt{
+    display: flex;
+    align-items: center;
+}
+
+.icone-player a{
+    color: white;
+    padding: 6px;
+    font-size: 10pt;
+}
 
 
 /* **** debug **** */
